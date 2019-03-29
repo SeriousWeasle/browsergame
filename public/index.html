@@ -1,0 +1,67 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script src="./js/core.js"></script>
+    <script src="./js/worldgen.js"></script>
+    <script src="./js/data.js"></script>
+    <script src="./js/draw.js"></script>
+</head>
+<body>
+    <!--
+        ############################################
+                        MAIN MENU STUFF
+        ############################################
+    -->
+    <div id="mainmenu">
+        <div id="mainmenu-logo-container">
+
+        </div>
+        <div id="mainmenu-buttons-container">
+            <button id="mainmenu-button" onclick="worldCreation()">NEW GAME</button>
+            <button id="mainmenu-button" onclick="loadSave()">LOAD GAME</button>
+        </div>
+    </div>
+
+    <!--
+        ############################################
+                    World creation screen
+        ############################################
+    -->
+    <div id="worldcreationscreen">
+        <div id="worldcreationscreen-topbar">
+            <button id="backbutton" onclick="worldCreationBack()">BACK</button>
+            WORLD CREATION
+        </div>
+        <div id="worldcreationscreen-creatorcontainer">
+            <div id="worldcreationscreen-paramcontainer">
+                <textarea placeholder="World width [32-1024]" id="worldparam-width"></textarea>
+                <textarea placeholder="World height [32-1024]" id="worldparam-height"></textarea>
+            </div>
+            <div id="worldcreationscreen-textcontainer">
+                <div id="worldcreationscreen-text">
+
+                </div>
+                <div id="worldcreationscreen-donecontainer">
+                    <button id="donebutton" onclick="createWorldParams()">DONE</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--
+        ############################################
+                        World map
+        ############################################
+    -->
+    <div id="gameWindow">
+        <div id="mapContainer">
+
+        </div>
+    </div>
+</body>
+</html>
